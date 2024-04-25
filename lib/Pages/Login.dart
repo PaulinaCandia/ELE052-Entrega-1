@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold( 
       appBar: AppBar(
-        title: Text("Inicio de Sesión")
+        title: Text("Inicio de Sesión", style: TextStyle(color: Colors.black),),
       ),
       body: Padding(padding: EdgeInsets.all(8),
       child: Column(
@@ -32,12 +32,16 @@ class LoginPage extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {}, 
               child: Text("Enviar"),
+              //final route = MaterialPageRoute(builder: (context) {
+                //return LoginPage();
+              //});
+              //Navigator.push(context, route);
             ),
             
             ),
         ],
       ),
-      ),     
+      ),
     );
   }
 }

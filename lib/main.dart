@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Pages/Login.dart';
+import 'package:flutter_application_1/Pages/Profile.dart';
+import 'package:flutter_application_1/Pages/Services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.orangeAccent,
+          foregroundColor: Colors.black12,
+        ),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -33,7 +39,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       //home: const MyHomePage(title: 'The High Table'),
-      home: LoginPage(),
+      //home: LoginPage(),
+      home: ServicesPage(),
+      //home: ProfilePage(),
     );
   }
 }
