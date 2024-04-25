@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Pages/Login.dart';
 import 'package:flutter_application_1/Pages/Services/The_Cleaners.dart';
 import 'package:flutter_application_1/Pages/Services/The_Doctor.dart';
 import 'package:flutter_application_1/Pages/Services/The_Somelier.dart';
@@ -11,6 +10,7 @@ class ServicesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: Color.fromARGB(255, 40, 39, 39),
       appBar: AppBar(
         title: Text("Servicios", style: TextStyle(color: Colors.black),),
       ),
@@ -18,12 +18,12 @@ class ServicesPage extends StatelessWidget {
         children: [
           ListTile(
             leading: Icon(
-              Icons.add_box,
+              Icons.wine_bar,
               color: Colors.amber,
             ),
             trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("The Sommelier"),
-            subtitle: Text("Armas y Municiones"),
+            title: Text("The Sommelier", style: TextStyle(color: Colors.white),),
+            subtitle: Text("Armas y Municiones", style: TextStyle(color: Colors.white),),
             onTap: () {
               print("The Sommelier");
               final route = MaterialPageRoute(builder: (context) {
@@ -43,12 +43,12 @@ class ServicesPage extends StatelessWidget {
             ),
             ListTile(
             leading: Icon(
-              Icons.add_box,
+              Icons.medical_information,
               color: Colors.amber,
             ),
             trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("The Doctor"),
-            subtitle: Text("Servicios medicos de urgencia"),
+            title: Text("The Doctor", style: TextStyle(color: Colors.white),),
+            subtitle: Text("Servicios medicos de urgencia", style: TextStyle(color: Colors.white),),
             onTap: () {
               print("The Doctor");
               final route = MaterialPageRoute(builder: (context) {
@@ -63,12 +63,12 @@ class ServicesPage extends StatelessWidget {
             ),
           ListTile(
             leading: Icon(
-              Icons.add_box,
+              Icons.cut,
               color: Colors.amber,
             ),
             trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("The Tailor"),
-            subtitle: Text("Trajes antibalas"),
+            title: Text("The Tailor", style: TextStyle(color: Colors.white),),
+            subtitle: Text("Trajes antibalas", style: TextStyle(color: Colors.white),),
             onTap: () {
               print("The Tailor");
               final route = MaterialPageRoute(builder: (context) {
@@ -83,12 +83,12 @@ class ServicesPage extends StatelessWidget {
             ),
           ListTile(
             leading: Icon(
-              Icons.add_box,
+              Icons.cleaning_services,
               color: Colors.amber,
             ),
             trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text("The Cleaners"),
-            subtitle: Text("Servicios de limpieza"),
+            title: Text("The Cleaners", style: TextStyle(color: Colors.white),),
+            subtitle: Text("Servicios de limpieza", style: TextStyle(color: Colors.white),),
             onTap: () {
               print("The Cleaners");
               

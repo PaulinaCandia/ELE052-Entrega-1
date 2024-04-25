@@ -7,8 +7,9 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 40, 39, 39),
       appBar: AppBar(
-        title: Text("Profile", style: TextStyle(color: Colors.black),),
+        title: Text("Perfil", style: TextStyle(color: Colors.black),),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -18,16 +19,16 @@ class ProfilePage extends StatelessWidget {
               Image(image: AssetImage("assets/images/DaisytheDogg.png")),
 
               Row(
-                children: [Text("Nombre:"), Text(" John Wick",)],
+                children: [Text("Nombre:", style: TextStyle(color: Colors.white),), Text(" John Wick", style: TextStyle(color: Colors.white),)],
               ),
               Row(
-                children: [Text("Nacionalidad: Americano")],
+                children: [Text("Nacionalidad: Americano", style: TextStyle(color: Colors.white),)],
               ),
               Row(
-                children: [Text("Edad: 59")],
+                children: [Text("Edad: 59", style: TextStyle(color: Colors.white),)],
               ),
               Row(
-                children: [Text("Cantidad de asesinatos:")],
+                children: [Text("Cantidad de asesinatos:", style: TextStyle(color: Colors.white),)],
               ),
               
               

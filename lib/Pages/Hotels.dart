@@ -7,19 +7,63 @@ class HotelsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 40, 39, 39),
       appBar: AppBar(
         title: Text("Hoteles", style: TextStyle(color: Colors.black),),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(8),
-          child: Column(
+      body: 
+        ListView(
             children: [
-
-
+              ListTile(
+                leading: Icon(
+                  Icons.pin_drop,
+                  color: Colors.amber,
+                ),
+                title: Text("New York City", style: TextStyle(color: Colors.white),),
+                subtitle: Text("Dirección: calle, numero, comuna", style: TextStyle(color: Colors.white),),
+              ),
+              Divider(
+                thickness: 0.5,
+                color: Colors.amberAccent,
+              ),
+              ListTile(
+                leading: Icon(
+                  Icons.pin_drop,
+                  color: Colors.amber,
+                ),
+                title: Text("Rome", style: TextStyle(color: Colors.white),),
+                subtitle: Text("Dirección: calle, numero, comuna", style: TextStyle(color: Colors.white),),
+              ),
+              Divider(
+                thickness: 0.5,
+                color: Colors.amberAccent,
+              ),
+              ListTile(
+                leading: Icon(
+                  Icons.pin_drop,
+                  color: Colors.amber,
+                ),
+                title: Text("Casa Blanca", style: TextStyle(color: Colors.white),),
+                subtitle: Text("Dirección: calle, numero, comuna", style: TextStyle(color: Colors.white),),
+              ),
+              Divider(
+                thickness: 0.5,
+                color: Colors.amberAccent,
+              ),
+              ListTile(
+                leading: Icon(
+                  Icons.pin_drop,
+                  color: Colors.amber,
+                ),
+                title: Text("Osaka", style: TextStyle(color: Colors.white),),
+                subtitle: Text("Dirección: calle, numero, comuna", style: TextStyle(color: Colors.white),),
+              ),
+              Divider(
+                thickness: 0.5,
+                color: Colors.amberAccent,
+              ),
               
             ],)
-        ),) 
     );
   }
 }

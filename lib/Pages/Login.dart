@@ -6,6 +6,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
+      backgroundColor: Colors.orangeAccent,
       appBar: AppBar(
         title: Text("Inicio de Sesión", style: TextStyle(color: Colors.black),),
       ),
@@ -17,7 +18,8 @@ class LoginPage extends StatelessWidget {
             padding: EdgeInsets.all(8),
             child: TextFormField(
               decoration: const InputDecoration(
-                border: OutlineInputBorder(), labelText: "Email"),
+                border: OutlineInputBorder(), labelText: "Email" ),
+
                 ),
             ),
           Padding(

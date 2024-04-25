@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Pages/Login.dart';
-import 'package:flutter_application_1/Pages/Profile.dart';
-import 'package:flutter_application_1/Pages/Services.dart';
+//import 'package:flutter_application_1/Pages/Contracts.dart';
+import 'package:flutter_application_1/Pages/HomePage.dart';
+//import 'package:flutter_application_1/Pages/Hotels.dart';
+//import 'package:flutter_application_1/Pages/Login.dart';
+//import 'package:flutter_application_1/Pages/Profile.dart';
+//import 'package:flutter_application_1/Pages/Services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,10 +41,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 196, 178, 154)),
         useMaterial3: true,
       ),
-      //home: const MyHomePage(title: 'The High Table'),
+      home: HomePage(),
       //home: LoginPage(),
-      home: ServicesPage(),
+      //home: ServicesPage(),
       //home: ProfilePage(),
+      //home: ContractsPage(),
+      //home: HotelsPage(),
     );
   }
 }
