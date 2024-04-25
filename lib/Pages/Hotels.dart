@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Hotels extends StatelessWidget {
-  const Hotels({super.key});
+class HotelsPage extends StatelessWidget {
+  const HotelsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
